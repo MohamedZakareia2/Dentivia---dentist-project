@@ -1,0 +1,93 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.t-container{
+    margin: 50px 0 ;
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 360px; /* Changed from fixed height */
+    background: url(../../Assets/3.jpg) center no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/3.jpg);
+    background-size: cover;
+    object-fit: fill;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.t-e{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.t-e img{
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.t-e h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.t-e span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .t-container {
+        margin-bottom: 100px;
+        flex-direction: column; /* Stack vertically */
+        gap: 30px;
+        min-height: auto;
+        padding: 60px 20px; /* More vertical padding */
+    }
+
+    .t-e {
+        width: 100%; /* Full width items */
+        padding: 15px 0; /* Vertical spacing */
+    }
+
+    .t-e img {
+        width: 50px; /* Slightly smaller on mobile */
+        margin-bottom: 10px;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .t-container {
+        margin-bottom: 100px;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .t-e h3 {
+        font-size: 22px;
+    }
+
+    .t-e span {
+        font-size: 14px;
+    }
+}
+
+
+
+

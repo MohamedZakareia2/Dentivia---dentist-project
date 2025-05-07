@@ -1,0 +1,156 @@
+.c-FAQ {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.h-FAQ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.h-FAQ h1 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.h-FAQ p {
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    font-weight: 300;
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.FAQ-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.FAQ-contet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.FAQ-g {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.FAQ-contet h3 {
+    font-weight: 700;
+    font-size: clamp(1.1rem, 4vw, 1.25rem);
+    color: var(--primary-color);
+    text-align: left;
+    width: 100%;
+}
+
+.FAQ-contet p {
+    width: 100%;
+    font-weight: 300;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+}
+
+.FAQ-line {
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: 1.25rem;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* Small devices (min-width: 400px) */
+@media (min-width: 400px) {
+    .c-FAQ {
+        padding: 4rem 2rem;
+    }
+    
+    .FAQ-g {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Medium devices (min-width: 768px) */
+@media (min-width: 768px) {
+    .FAQ-content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .FAQ-contet {
+        width: 50%;
+        padding: 0 1rem;
+    }
+    
+    .h-FAQ p {
+        width: 80%;
+    }
+}
+
+/* Large devices (min-width: 992px) */
+@media (min-width: 992px) {
+    .c-FAQ {
+        width: 90%;
+        max-width: 1400px;
+        padding: 5rem 2rem;
+    }
+    
+    .FAQ-content-wrapper {
+        gap: 2rem;
+    }
+    
+    .FAQ-contet {
+        gap: 2rem;
+    }
+    
+    .h-FAQ p {
+        width: 60%;
+    }
+    
+    .FAQ-contet p {
+        width: 80%;
+    }
+}
+
+/* Extra small devices (max-width: 400px) */
+@media (max-width: 400px) {
+    .FAQ-line {
+        font-size: 1rem;
+    }
+    
+    .FAQ-g {
+        padding: 0 0.5rem;
+    }
+}

@@ -1,0 +1,235 @@
+.book-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.c-Book {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.l-book {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.l-book h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input, 
+.form select, 
+.form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form .large-input {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form select {
+    color: #757575;
+}
+
+.form select option:not([disabled]) {
+    color: #000;
+}
+
+.l-book button {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.l-book button:hover {
+    background-color: var(--primary2-color);
+    border: 1px solid var(--primary2-color);
+}
+
+.r-book {
+    display: none;
+}
+
+/* Small devices (400px and up) */
+@media (min-width: 400px) {
+    .book-wrapper {
+        height: auto;
+    }
+    
+    .form {
+        width: 90%;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .c-Book {
+        flex-direction: row;
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .l-book {
+        width: 50%;
+        gap: 2.5rem;
+    }
+    
+    .r-book {
+        display: flex;
+        position: relative;
+        width: 45%;
+        height: auto;
+        min-height: 600px;
+        background: url(../../Assets/3.jpg) center/cover no-repeat;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .r-book::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .r-book-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding: 2rem;
+    }
+    
+    .top-r-book {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 180px;
+        border: 2px dashed white;
+        border-radius: 5%;
+        padding: 1.5rem;
+    }
+    
+    .top-r-book p {
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    .bot-r-book {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .bot-r-book h5 {
+        text-align: center;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bot-r-book h5 span {
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    
+    .bot-r-book img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .book-wrapper {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .c-Book {
+        height: 80vh;
+    }
+    
+    .l-book {
+        width: 50%;
+        gap: 3rem;
+    }
+    
+    .form {
+        width: 80%;
+    }
+    
+    .r-book {
+        width: 45%;
+        height: 80vh;
+    }
+    
+    .top-r-book p {
+        font-size: 1.1rem;
+    }
+    
+    .bot-r-book h5 {
+        font-size: 1.3rem;
+    }
+    
+    .bot-r-book h5 span {
+        font-size: 1rem;
+    }
+    
+    .bot-r-book img {
+        height: 90px;
+        width: 90px;
+    }
+}

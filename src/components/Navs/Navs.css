@@ -1,0 +1,183 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    width: 100vw; /* Full viewport width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.104);
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    width: 100%;
+    height: 5.5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo {
+    z-index: 1002; /* Above mobile menu */
+}
+
+.logo .l {
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    font-weight: 800;
+}
+
+.logo .i {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+}
+
+/* Desktop Navigation */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.nav-links li:hover {
+    color: var(--secondary-color);
+}
+
+/* Contacts - Hidden when burger is active */
+.contacts {
+    padding: 0 1.5rem;
+    height: 65%;
+    background-color: var(--primary2-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 10px 0 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item {
+    color: white;
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    color: white;
+    transition: transform 0.3s;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    z-index: 1002;
+    position: relative;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform-origin: left center;
+}
+
+/* Mobile Menu Styles (<= 1024px) */
+@media (max-width: 1024px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1001;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .nav-links li {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .burger {
+        display: flex;
+    }
+    
+    /* Hide contacts when burger is visible */
+    .contacts {
+        display: none;
+    }
+    
+    /* Push logo to left when burger appears */
+    .container {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+}
+
+/* Small mobile adjustments (<= 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .burger {
+        width: 26px;
+    }
+    
+    .nav-links li {
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop adjustments (> 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1400px;
+        width: 90%;
+    }
+    
+    .contacts {
+        display: flex; /* Ensure contacts are visible on desktop */
+    }
+}

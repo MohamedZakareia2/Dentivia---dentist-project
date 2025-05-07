@@ -1,0 +1,355 @@
+.wrapper-footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary2-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* overflow: hidden; — optional */
+}
+
+.c-Footer{
+    width: 100%;
+}
+
+
+.pre-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    background-color: #fff;
+    z-index: 4;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+
+.g-footer{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.f-icon{
+    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /*Adjustsize*/height: 50px;
+    /*Adjustsize*/border-radius: 50%;
+    /*Makesitcircular*/background: var(--secondary-color);
+    /*Dentalblue(changecolor)*/color: white;
+    /*Iconcolor*/margin: 0 10px;
+    /*Spacing*/font-size: 32px;
+    /*Iconsize*/padding: 30px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+
+.c-g-content h3{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+
+
+.c-g-content{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+.c-content-footer{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-Footer{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.logo-f {
+    align-self: flex-start; /* Align logo to the left within its container */
+    margin-bottom: 10px; /* Space between logo and content below */
+}
+
+.logo-f .l {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logo-f .i {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+
+.l-c-Footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Change from center to flex-start */
+    padding-left: 10%; /* Adjust this value to match your pre-footer alignment */
+}
+
+
+
+
+.l-c-Footer p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    width: 80%;
+    text-align: left; /* Ensure text alignment matches */}
+
+
+
+.f-co-services{
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f-co{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+.f-co h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.f-co ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s;
+    white-space: nowrap;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+
+.f-co ul li:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+.r-c-Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.r-c-Footer iframe {
+    width: 80%;
+    height: 40%;
+    min-height: 400px;
+    /*Adjustasneeded*/border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.f-rights{
+    align-self: flex-end;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.f-rights p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* Tablets and smaller desktops */
+@media (max-width: 992px) {
+    .pre-footer {
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      padding: 20px 0;
+      transform: translate(0, 00px);
+      gap: 20px;
+      -webkit-transform: translate(0, 00px);
+      -moz-transform: translate(0, 00px);
+      -ms-transform: translate(0, 00px);
+      -o-transform: translate(0, 00px);
+}
+  
+    .g-footer {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .f-co-services {
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .c-Footer {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .r-c-Footer {
+      width: 100%;
+    }
+  
+    .r-c-Footer iframe {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .l-c-Footer {
+      width: 100%;
+      padding-left: 0;
+      align-items: flex-start;
+    }
+  
+    .f-rights {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 768px) {
+    .pre-footer {
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+    
+      .g-footer {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    .logo-f .l,
+    .logo-f .i {
+      font-size: 30px;
+    }
+  
+    .c-g-content h3,
+    .c-g-content span {
+      font-size: 16px;
+    }
+  
+    .l-c-Footer p {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .f-co h4 {
+      font-size: 18px;
+    }
+  
+    .f-co ul li {
+      font-size: 14px;
+    }
+  }
+  
+  /* Extra small phones */
+  @media (max-width: 400px) {
+    .pre-footer {
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+  
+    .f-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      padding: 20px;
+    }
+  
+    .c-g-content h3 {
+      font-size: 14px;
+    }
+  
+    .f-rights p {
+      font-size: 14px;
+    }
+  
+    .icons {
+      gap: 10px;
+    }
+  
+    .logo-f .l,
+    .logo-f .i {
+      font-size: 24px;
+    }
+  }
+  

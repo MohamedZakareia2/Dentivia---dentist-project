@@ -1,0 +1,22 @@
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root{
+  --primary-color: #23357f;
+  --secondary-color: #1CC198;
+  --primary2-color: #3B57C9; 
+  --p-color: #4b4b4b; 
+  --header-color:#D9F5F7;
+  --white-text: #fff;
+}
