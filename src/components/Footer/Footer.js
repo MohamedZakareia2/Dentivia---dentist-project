@@ -77,12 +77,7 @@ const Footer = ({refs}) => {
                 
                 <div className="f-rights">
                 <p>© 2024 Copyright Dentivia by Mohamed Zakareia. All Rights Reserved.</p>
-                <div className="icons">
-                <a href="#" className="icon fb"><i className="fab fa-facebook-f"></i></a>
-                <a href="#" className="icon tw"><i className="fab fa-twitter"></i></a>
-                <a href="#" className="icon ig"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="icon li"><i className="fab fa-linkedin-in"></i></a>
-        </div>
+              
             </div>
             </div>
             
